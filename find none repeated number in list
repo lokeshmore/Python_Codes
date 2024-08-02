@@ -1,0 +1,14 @@
+def find_unique_number(my_list):
+    unique_value = []
+    for num in my_list:
+        count = 0
+        for other_num in my_list:
+            if num == other_num:
+                count += 1
+        if count == 1:
+            unique_value.append(num)
+    return unique_value
+
+my_list = [1,2,3,3,4,6,7,1,2]
+unique_number = find_unique_number(my_list)
+print(f"unique number is {unique_number}")
