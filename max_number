@@ -1,10 +1,8 @@
 def max_number(a):
-    max_number = 0
-    for i in range(len(a) - 1):
-        for w in (a[1:]):
-            if w > max_number:
-                max_number = w
-    print(max_number)
-
-a = [12,1,14,19,3]
+    maxn = 0 
+    for l in(a):
+        if l > maxn:
+            maxn = l
+    print(maxn)
+a = [12,1,23,12,53,11]
 max_number(a)
